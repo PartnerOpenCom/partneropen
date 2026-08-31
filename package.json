@@ -1,0 +1,20 @@
+{
+  "name": "partneropen",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:cloud": "npm --workspace apps/cloud run dev",
+    "dev:control-plane": "npm --workspace apps/control-plane run dev",
+    "build:cloud": "npm --workspace apps/cloud run build",
+    "build:control-plane": "npm --workspace apps/control-plane run build",
+    "start:cloud": "npm --workspace apps/cloud run start",
+    "start:control-plane": "npm --workspace apps/control-plane run start",
+    "test:cloud": "node --test apps/cloud/tests",
+    "test:control-plane": "node --test apps/control-plane/tests/*.test.mjs",
+    "sync:demo": "node apps/cloud/scripts/sync-demo.mjs"
+  }
+}

@@ -1,0 +1,233 @@
+.partneropen-admin {
+    max-width: 1180px;
+}
+
+.partneropen-admin h1 {
+    margin-bottom: 8px;
+}
+
+.partneropen-admin__lede {
+    max-width: 780px;
+    color: #50575e;
+    font-size: 14px;
+}
+
+.partneropen-admin__notice,
+.partneropen-admin__section,
+.partneropen-admin__card,
+.partneropen-pairing-code {
+    box-sizing: border-box;
+    max-width: 1080px;
+    margin: 20px 0;
+    padding: 20px 24px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.partneropen-admin__notice {
+    border-left: 4px solid #2271b1;
+    background: #f6f7f7;
+}
+
+.partneropen-admin__notice strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #1d2327;
+    font-size: 15px;
+}
+
+.partneropen-admin__notice p:last-child,
+.partneropen-admin__section p:last-child,
+.partneropen-admin__card p:last-child {
+    margin-bottom: 0;
+}
+
+.partneropen-admin__form .partneropen-admin__section h2,
+.partneropen-admin__section h2,
+.partneropen-admin__card h2 {
+    margin-top: 0;
+}
+
+.partneropen-admin__form .description {
+    display: block;
+    max-width: 680px;
+    margin-top: 5px;
+}
+
+.partneropen-consent-table-wrap {
+    overflow-x: auto;
+    margin-top: 16px;
+}
+
+.partneropen-consent-table {
+    min-width: 900px;
+}
+
+.partneropen-consent-table th,
+.partneropen-consent-table td {
+    vertical-align: top;
+}
+
+.partneropen-consent-table th:first-child {
+    min-width: 145px;
+}
+
+.partneropen-consent-table td {
+    line-height: 1.45;
+}
+
+.partneropen-consent-table code {
+    color: #50575e;
+    font-size: 11px;
+}
+
+.partneropen-consent-table__badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 2px 7px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+.partneropen-consent-table__badge--required {
+    color: #1d4f73;
+    background: #dbeefb;
+}
+
+.partneropen-consent-table__badge--optional {
+    color: #50575e;
+    background: #f0f0f1;
+}
+
+.partneropen-admin__section--ack {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.partneropen-admin__section--ack p {
+    margin: 0;
+}
+
+.partneropen-pairing-code {
+    border-color: #72aee6;
+    background: #f0f6fc;
+}
+
+.partneropen-pairing-code h2 {
+    margin-top: 0;
+}
+
+.partneropen-pairing-code__value {
+    width: 16em;
+    max-width: 100%;
+    margin-right: 8px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-align: center;
+}
+
+.partneropen-status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+    max-width: 1080px;
+    margin: 20px 0;
+}
+
+.partneropen-status-grid__item {
+    min-height: 68px;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.partneropen-status-grid__item span,
+.partneropen-status-grid__item strong {
+    display: block;
+}
+
+.partneropen-status-grid__item span {
+    margin-bottom: 7px;
+    color: #50575e;
+    font-size: 12px;
+}
+
+.partneropen-status-grid__item strong {
+    overflow-wrap: anywhere;
+    color: #1d2327;
+}
+
+.partneropen-pause-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-left: 4px solid #2271b1;
+}
+
+.partneropen-pause-card form {
+    flex: 0 0 auto;
+}
+
+.partneropen-optional-scope {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 14px 0;
+    border-top: 1px solid #dcdcde;
+}
+
+.partneropen-optional-scope:first-of-type {
+    border-top: 0;
+}
+
+.partneropen-optional-scope p {
+    margin: 3px 0 0;
+    color: #50575e;
+}
+
+.partneropen-disconnect-card {
+    border-left: 4px solid #8c8f94;
+    background: #fbfbfc;
+}
+
+.partneropen-disconnect-card h2 {
+    color: #1d2327;
+}
+
+.partneropen-disconnect-card form {
+    margin-top: 18px;
+    padding-top: 15px;
+    border-top: 1px solid #dcdcde;
+}
+
+.partneropen-snapshot-delete {
+    max-width: 1080px;
+    background: #fbfbfc;
+}
+
+@media screen and (max-width: 782px) {
+    .partneropen-admin__card,
+    .partneropen-optional-scope {
+        display: block;
+    }
+
+    .partneropen-pause-card form,
+    .partneropen-optional-scope form {
+        margin-top: 14px;
+    }
+
+    .partneropen-pairing-code__value {
+        width: 13em;
+    }
+}

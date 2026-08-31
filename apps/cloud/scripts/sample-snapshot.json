@@ -1,0 +1,82 @@
+{
+  "version": 3,
+  "space": {
+    "id": "space-demo",
+    "slug": "reviews",
+    "title": "Partner reviews",
+    "status": "published"
+  },
+  "seo": {
+    "title": "Partner reviews",
+    "description": "A clear, disclosed collection of partner reviews.",
+    "canonical": "https://site.example/partner/reviews/"
+  },
+  "allowed_hosts": [
+    "destination.example"
+  ],
+  "blocks": [
+    {
+      "type": "hero",
+      "heading": "Partner reviews",
+      "lede": "Read the latest reviewed options with clear disclosures.",
+      "link_id": "l1",
+      "placement_id": "hero",
+      "label": "Open review"
+    },
+    {
+      "type": "text",
+      "html": "<p>PartnerOpen keeps each destination visible and every commercial relationship disclosed.</p>"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Example review",
+          "body": "A concise overview for the delegated Space.",
+          "link_id": "l2",
+          "placement_id": "card-1",
+          "label": "Read review"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "label": "View all reviews",
+      "link_id": "l3",
+      "placement_id": "footer"
+    }
+  ],
+  "links": {
+    "l1": {
+      "destination": "https://destination.example/reviews",
+      "label": "Open review",
+      "disclosure": "Sponsored link. We may receive a commission.",
+      "status": "active",
+      "placements": ["hero"]
+    },
+    "l2": {
+      "destination": "https://destination.example/example",
+      "label": "Read review",
+      "disclosure": "Sponsored link. We may receive a commission.",
+      "status": "active",
+      "placements": ["card-1"]
+    },
+    "l3": {
+      "destination": "https://destination.example/reviews/all",
+      "label": "View all reviews",
+      "disclosure": "Sponsored link. We may receive a commission.",
+      "status": "active",
+      "placements": ["footer"]
+    }
+  },
+  "agent": {
+    "summary": "A public collection of partner reviews.",
+    "instructions": ["Use the canonical Space URL and follow visible disclosures."],
+    "entities": [
+      {
+        "name": "Example review",
+        "type": "Review"
+      }
+    ]
+  }
+}

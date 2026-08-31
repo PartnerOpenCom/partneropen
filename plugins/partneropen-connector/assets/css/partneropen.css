@@ -1,0 +1,259 @@
+.partneropen-space {
+    --partneropen-bg: #f6f8fb;
+    --partneropen-surface: #ffffff;
+    --partneropen-surface-muted: #eef2f7;
+    --partneropen-text: #172033;
+    --partneropen-muted: #5c6678;
+    --partneropen-border: #d9e0ea;
+    --partneropen-accent: #2057d4;
+    --partneropen-accent-contrast: #ffffff;
+    --partneropen-radius: 1rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: clamp(1.25rem, 3vw, 3rem);
+    color: var(--partneropen-text);
+    background: var(--partneropen-bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+}
+
+.partneropen-space *,
+.partneropen-space *::before,
+.partneropen-space *::after {
+    box-sizing: border-box;
+}
+
+.partneropen-space__header,
+.partneropen-space__hero,
+.partneropen-space__text,
+.partneropen-space__cards,
+.partneropen-space__cta,
+.partneropen-space__link-block,
+.partneropen-space__faq,
+.partneropen-space__comparison,
+.partneropen-space__table,
+.partneropen-space__image {
+    margin: 0 0 1.5rem;
+}
+
+.partneropen-space__header {
+    padding: clamp(2rem, 8vw, 6rem) clamp(1rem, 4vw, 4rem);
+    border: 1px solid var(--partneropen-border);
+    border-radius: calc(var(--partneropen-radius) * 1.5);
+    background: linear-gradient(135deg, var(--partneropen-surface), var(--partneropen-surface-muted));
+}
+
+.partneropen-space__title,
+.partneropen-space__hero-heading,
+.partneropen-space__cta-label {
+    margin: 0;
+    color: var(--partneropen-text);
+    font-weight: 750;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.partneropen-space__title {
+    font-size: clamp(2rem, 6vw, 4.5rem);
+}
+
+.partneropen-space__hero,
+.partneropen-space__cta {
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: var(--partneropen-radius);
+    background: var(--partneropen-surface);
+    box-shadow: 0 0.75rem 2rem rgb(23 32 51 / 6%);
+}
+
+.partneropen-space__hero-heading,
+.partneropen-space__cta-label {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.partneropen-space__hero-lede,
+.partneropen-space__card-body,
+.partneropen-space__faq-answer {
+    color: var(--partneropen-muted);
+}
+
+.partneropen-space__hero-lede {
+    max-width: 52rem;
+    margin: 1rem 0 1.5rem;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+}
+
+.partneropen-space__text {
+    padding: clamp(1rem, 3vw, 2rem);
+    border-left: 0.25rem solid var(--partneropen-accent);
+    background: var(--partneropen-surface);
+}
+
+.partneropen-space__text > :first-child {
+    margin-top: 0;
+}
+
+.partneropen-space__text > :last-child {
+    margin-bottom: 0;
+}
+
+.partneropen-space__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: 1rem;
+}
+
+.partneropen-space__card {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    padding: 1.25rem;
+    border: 1px solid var(--partneropen-border);
+    border-radius: var(--partneropen-radius);
+    background: var(--partneropen-surface);
+}
+
+.partneropen-space__card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+.partneropen-space__card-body {
+    margin: 0.65rem 0 1.25rem;
+}
+
+.partneropen-space__hero-link,
+.partneropen-space__cta-link,
+.partneropen-space__card-link,
+.partneropen-space__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: auto;
+    padding: 0.65rem 1rem;
+    border-radius: 0.6rem;
+    color: var(--partneropen-accent-contrast);
+    background: var(--partneropen-accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.partneropen-space__hero-link:focus-visible,
+.partneropen-space__cta-link:focus-visible,
+.partneropen-space__card-link:focus-visible,
+.partneropen-space__link:focus-visible {
+    outline: 0.2rem solid color-mix(in srgb, var(--partneropen-accent) 45%, transparent);
+    outline-offset: 0.15rem;
+}
+
+.partneropen-space__disclosure {
+    margin: 0.65rem 0 0;
+    color: var(--partneropen-muted);
+    font-size: 0.82rem;
+}
+
+.partneropen-space__cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.5rem;
+}
+
+.partneropen-space__cta .partneropen-space__disclosure {
+    flex-basis: 100%;
+}
+
+.partneropen-space__link-block {
+    padding: 1rem;
+    border: 1px solid var(--partneropen-border);
+    border-radius: 0.75rem;
+    background: var(--partneropen-surface);
+}
+
+.partneropen-space__faq-list {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.partneropen-space__faq-item {
+    border: 1px solid var(--partneropen-border);
+    border-radius: 0.7rem;
+    background: var(--partneropen-surface);
+}
+
+.partneropen-space__faq-item summary {
+    cursor: pointer;
+    padding: 1rem 1.15rem;
+    font-weight: 700;
+}
+
+.partneropen-space__faq-answer {
+    padding: 0 1.15rem 1rem;
+}
+
+.partneropen-space__table-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--partneropen-border);
+    border-radius: var(--partneropen-radius);
+    background: var(--partneropen-surface);
+}
+
+.partneropen-space table {
+    width: 100%;
+    min-width: 32rem;
+    border-collapse: collapse;
+}
+
+.partneropen-space th,
+.partneropen-space td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--partneropen-border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.partneropen-space th {
+    color: var(--partneropen-text);
+    background: var(--partneropen-surface-muted);
+    font-weight: 750;
+}
+
+.partneropen-space tr:last-child td {
+    border-bottom: 0;
+}
+
+.partneropen-space__image {
+    overflow: hidden;
+    border-radius: var(--partneropen-radius);
+}
+
+.partneropen-space__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    .partneropen-space {
+        --partneropen-bg: #111827;
+        --partneropen-surface: #1b2433;
+        --partneropen-surface-muted: #232f42;
+        --partneropen-text: #f4f7fb;
+        --partneropen-muted: #b4bfd0;
+        --partneropen-border: #3b4657;
+        --partneropen-accent: #83a7ff;
+        --partneropen-accent-contrast: #0c1424;
+    }
+}
+
+@media (max-width: 40rem) {
+    .partneropen-space {
+        padding: 1rem;
+    }
+
+    .partneropen-space__cta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

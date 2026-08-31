@@ -1,0 +1,25 @@
+.worktrees/
+node_modules/
+.next/
+.vercel/
+__pycache__/
+out/
+dist/
+coverage/
+artifacts/
+.DS_Store
+
+# Never commit credentials: only .env.example is tracked.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+id_rsa*
+auth.json
+*.tsbuildinfo
+secrets.json
+.vercel
+.env*
+!.env.example
