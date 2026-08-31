@@ -9,7 +9,7 @@
     "migrate": "node scripts/migrate.mjs"
   },
   "dependencies": {
-    "next": "^16.3.3",
+    "next": "^16.4.0-canary.12",
     "postgres": "^3.4.7",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
