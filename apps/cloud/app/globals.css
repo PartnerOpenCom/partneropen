@@ -477,16 +477,3 @@ h3 { margin: 23px 0 10px; font-size: 24px; }
   .legal-section { padding: 46px 0 52px; }
   .legal-never-list, .legal-aside { grid-template-columns: 1fr; }
 }
-
-/* Join / magic-link page */
-.join-page { min-height: 60vh; display: grid; place-items: center; padding: 80px 24px; }
-.join-card { max-width: 460px; width: 100%; }
-.join-card h1 { font-size: clamp(34px, 6vw, 48px); margin-bottom: 14px; }
-.join-card p { color: var(--muted, #5a6474); margin-bottom: 24px; }
-.join-form { display: grid; gap: 10px; }
-.join-form label { font-size: 13px; font-weight: 600; }
-.join-form input { padding: 12px 14px; border: 1px solid var(--line, #d9dee7); border-radius: 8px; font-size: 15px; width: 100%; }
-.join-form .button { margin-top: 10px; padding: 12px 18px; }
-.join-error { color: #b42318; font-size: 13px; }
-.join-sent { color: #1f8a4c; }
-.join-logged-in { display: grid; gap: 14px; }

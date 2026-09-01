@@ -1,1 +1,1 @@
-export { canonicalString, sign } from './signature-protocol.ts';
+export { canonicalString, sign } from '@partneropen/connector-protocol';

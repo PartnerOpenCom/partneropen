@@ -123,7 +123,6 @@ export default function HomePage() {
         <div className="topbar-links">
           <a href="#how-it-works">How to connect</a>
           <a href="#where">Use cases</a>
-          <Link href="/join">Join</Link>
         </div>
         <a className="topbar-download" href="/partneropen-connector-0.1.0.zip" download>Get WordPress Connector <span>↓</span></a>
       </nav>
