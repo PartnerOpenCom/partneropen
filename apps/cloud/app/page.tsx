@@ -175,7 +175,13 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <nav className="topbar" aria-label="Primary navigation">
-        <Link className="brand" href="/"><span className="brand-mark">P</span><span>PartnerOpen</span></Link>
+        <Link className="brand" href="/">
+          <svg className="brand-mark" width="30" height="30" viewBox="0 0 64 64" aria-hidden="true" style={{ borderRadius: '9px', flexShrink: 0 }}>
+            <rect width="64" height="64" rx="19" fill="#ff845c" />
+            <path d="M15 14h13.5c8.2 0 13.5 4.9 13.5 12.1 0 7.3-5.4 12.2-13.9 12.2H24V50h-9V14zm9 7.6v9.2h3.4c3.4 0 5.5-1.8 5.5-4.6 0-2.8-2.1-4.6-5.5-4.6H24z M50 15.2c2.65 0 4.8 2.15 4.8 4.8s-2.15 4.8-4.8 4.8-4.8-2.15-4.8-4.8 2.15-4.8 4.8-4.8zm0 2.5c-1.27 0-2.3 1.03-2.3 2.3s1.03 2.3 2.3 2.3 2.3-1.03 2.3-2.3-1.03-2.3-2.3-2.3z" fill="#1a100c" />
+          </svg>
+          <span>PartnerOpen</span>
+        </Link>
         <div className="topbar-links">
           <a href="#how-it-works">How to connect</a>
           <a href="#where">Use cases</a>

@@ -25,17 +25,18 @@ export default function OpenGraphImage() {
             style={{
               width: '64px',
               height: '64px',
-              borderRadius: '12px',
-              background: '#f1f0e8',
-              color: '#0b1016',
+              borderRadius: '19px',
+              background: '#ff845c',
+              color: '#1a100c',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '40px',
-              fontWeight: 700,
+              fontSize: '38px',
+              fontWeight: 900,
+              letterSpacing: '-0.06em',
             }}
           >
-            P
+            P°
           </div>
           <div style={{ fontSize: '34px', fontWeight: 600, letterSpacing: '0.02em' }}>PartnerOpen</div>
         </div>

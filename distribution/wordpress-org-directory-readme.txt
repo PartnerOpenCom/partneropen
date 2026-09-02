@@ -2,7 +2,7 @@
 Contributors: partneropenteam
 Tags: wordpress, content, publishing, privacy
 Requires at least: 6.5
-Tested up to: 7.1
+Tested up to: 6.8
 Requires PHP: 8.1
 Stable tag: 0.1.0
 License: GPLv2 or later
