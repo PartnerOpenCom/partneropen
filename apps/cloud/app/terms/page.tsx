@@ -20,8 +20,10 @@ import {
 export const dynamic = 'force-static';
 
 export const metadata = {
-  title: 'Terms of use · PartnerOpen Cloud',
-  description: 'Terms for PartnerOpen Connector and the stateless PartnerOpen Cloud site.',
+  title: 'Terms of use',
+  description:
+    'Terms of use for the PartnerOpen GPL WordPress Connector and the stateless PartnerOpen public site.',
+  alternates: { canonical: '/terms' },
 };
 
 export default function TermsPage() {

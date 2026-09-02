@@ -1,0 +1,30 @@
+# PartnerOpen
+
+> PartnerOpen is a GPL-2.0-or-later WordPress Connector that lets a Host run a partner Space on their own website: a named Creator publishes through a signed API, an MCP Connector or the PartnerOpen GUI, while the Host keeps consent, Spaces, snapshots, Global Pause and disconnect authority in WordPress. No visitor-level tracking.
+
+Key facts:
+
+- Product status: Milestone 1 (M1) is available now as Connector package v0.1.0 for WordPress.
+- License: GPL-2.0-or-later; free for the user; commercial terms stay between Host and Creator.
+- The WordPress site is the durable system of record; the public landing is stateless.
+- PartnerOpen reports only aggregate placement counters (date, placement, count) — never cookies, IPs, device fingerprints or visitor profiles.
+- Outbound links use a same-origin resolver with visible disclosure and rel="sponsored nofollow noopener"; raw external hrefs are never emitted.
+- Milestone 2 (multi-Host publishing network) is available by request.
+
+## Docs
+
+- [How it works](https://www.partneropen.com/#how-it-works): Five-step setup: install, set Space and Creator, agree the boundary, publish, keep global control.
+- [Consent scopes](https://www.partneropen.com/api/consent-scopes): Machine-readable list of the six consent scopes with fields, recipient and retention.
+- [Connector manifest](https://www.partneropen.com/api/connector-manifest): Package name, version and public capability manifest for Connector v0.1.0.
+- [Terms of Use](https://www.partneropen.com/terms): Usage terms for the public site and Connector distribution.
+- [Privacy Notice](https://www.partneropen.com/privacy): Data boundary, retention rules and the never-collected list.
+
+## Download
+
+- [Connector package v0.1.0](https://www.partneropen.com/partneropen-connector-0.1.0.zip): The GPL WordPress plugin zip, upload via Plugins → Add New → Upload Plugin.
+- [SHA-256 checksum](https://www.partneropen.com/partneropen-connector-0.1.0.zip.sha256): Checksum file to verify the package.
+
+## Optional
+
+- [Health endpoint](https://www.partneropen.com/api/health): Liveness probe for the stateless landing.
+- [Sitemap](https://www.partneropen.com/sitemap.xml): Full page list for crawlers.

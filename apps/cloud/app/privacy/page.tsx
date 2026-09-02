@@ -20,8 +20,10 @@ import {
 export const dynamic = 'force-static';
 
 export const metadata = {
-  title: 'Privacy notice · PartnerOpen Cloud',
-  description: 'Privacy notice for PartnerOpen Connector and the stateless PartnerOpen Cloud site.',
+  title: 'Privacy notice',
+  description:
+    'Privacy notice for the PartnerOpen Connector and the stateless PartnerOpen public site: consent scopes, data boundary, retention rules and the never-collected list.',
+  alternates: { canonical: '/privacy' },
 };
 
 export default function PrivacyPage() {

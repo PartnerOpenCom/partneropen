@@ -115,9 +115,65 @@ const faqs = [
   ],
 ] as const;
 
+const siteUrl = 'https://www.partneropen.com';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'PartnerOpen',
+      url: siteUrl,
+      logo: `${siteUrl}/icon-512.png`,
+      description:
+        'PartnerOpen publishes the GPL WordPress Connector for Host-controlled partner Spaces with consent-first Creator collaboration.',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      url: siteUrl,
+      name: 'PartnerOpen',
+      publisher: { '@id': `${siteUrl}/#organization` },
+      inLanguage: 'en',
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': `${siteUrl}/#connector`,
+      name: 'PartnerOpen Connector',
+      applicationCategory: 'BusinessApplication',
+      applicationSubCategory: 'WordPress Plugin',
+      operatingSystem: 'WordPress',
+      softwareVersion: connectorManifest.version,
+      license: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html',
+      downloadUrl: `${siteUrl}/partneropen-connector-${connectorManifest.version}.zip`,
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+      },
+      description:
+        'GPL WordPress Connector that creates a Host-controlled partner Space: pairing, scoped consent, snapshots, public rendering, aggregate counters, Global Pause and disconnect.',
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${siteUrl}/#faq`,
+      mainEntity: faqs.map(([question, answer]) => ({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: { '@type': 'Answer', text: answer },
+      })),
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
     <main className="site-shell">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <nav className="topbar" aria-label="Primary navigation">
         <Link className="brand" href="/"><span className="brand-mark">P</span><span>PartnerOpen</span></Link>
         <div className="topbar-links">
